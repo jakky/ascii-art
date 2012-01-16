@@ -1,0 +1,18 @@
+yes hello this is a big collection of unsorted asciis
+
+some tips for proper ascii scrollage (in irssi alias format):
+
+pump       exec -o cat ~/ascii/$0.txt | sed -e "s/^/ /"
+find       exec ls ~/ascii/ | grep "$0"
+test       exec cat ~/ascii/$0.txt
+asciinum   exec -o echo "I GOT \$(ls ~/ascii | wc -l) ASCIIS BUT A BITCH 
+AINT ONE"
+
+obviously i'm guessing that you put the asciis in ~/ascii, change if you 
+didn't
+
+for ascii art design, use ircpaint at paint.irc.so or 
+github.com/wwared/IRC-Paint
+made by the one and only pedrobear
+
+visit me at irc.xax.li or efnet under the nick jakk

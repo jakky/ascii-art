@@ -1,0 +1,84 @@
+
+NAME
+
+   rtfm - a response for easy questions from clueless lusers
+   
+SYNOPSIS
+
+   rtfm [ -p ] [ -h ] [ -d option ] [ -i interval ] [ -a action ] [ -q
+   luser]
+   
+DESCRIPTION
+
+   rtfm is a command for system administrators to use in dealing with new
+   users. rtfm is useful for dealing with users having trouble with their
+   pictures downloaded from alt.binaries.pictures.erotica. rtfm will
+   continue to run until killed by hand, using `kill processid'. rtfm can
+   be invoked by anyone who has enough of a clue to know what a man page
+   is.
+   
+OPTIONS
+
+   -p
+          Give the answer in a polite fashion.
+   -h
+          Tell the clueless luser to go to hell. Used with the -p option,
+          they'll look forward to the trip.
+   -d option
+          Debug mode using option where option is one of the following:
+          query Ask the luser what part of rtfm that he or she does not
+          understand.
+          planet Ask what planet the luser is from.
+          literacy Ask the luser if the luser can read.
+          english Ask the luser if the luser understands English.
+          Mac Ask the luser if the luser has ever used a computer other
+          than a Macintosh.
+          Nintendo Same as the Mac option, but slightly more harsh.
+   -i interval
+          Enable within interval seconds. interval is the time between a
+          luser asking the same damn fool question. This option must be
+          activated for the -a option. It stores the time of the question
+          in /var/run/luser and checks that file each time that rtfm is
+          activated. interval is a number of minutes, of the form xxx.xx
+          where each x is a decimal digit. The default is 5.00 minutes.
+   -a action
+          This defines some action to be taken in the event that the -i
+          flag condition is met. action can be defined either at the flag
+          level or by a file. The options for flags are as follows:
+          scream Let out a scream of utter frustration.
+          hair Rip out your hair in total frustration.
+          rm Automatic command ran in lusers home directory. It can have
+          an addition -rf flag added.
+          ignore Ignore the luser.
+          warn Warn the other sysadmins.
+          forward Forward to CNS advising. Particullary if the complaint
+          is /dev/null is full.
+          kill Kill all the lusers processes.
+          FILE=file.name Use a file to define a course of actions. This
+          can be any executeable file except those using ksh, which no
+          god-fearing right-thinking sysadmin would be caught using lest
+          he be struck down by the wrath of God.
+   -q luser
+          Query file /etc/luser to see if luser is a real luser or a
+          first time luser.
+          
+   
+   
+FILES
+
+   /etc/luser
+          
+   
+   
+SEE ALSO
+
+   mr.biff(2),
+          
+      
+BUGS
+
+   rtfm only checks /var/run/luser when the -a option is specified and
+   after the -i option is invoked. Otherwise /tmp would fill up rapidly
+   on many systems. Also, core may dump if the -a FILE= option is
+   anatomically impossible.
+
